@@ -1,0 +1,173 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  overflow: auto;
+  height: auto;
+}
+
+html {
+  font-size: 65%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav {
+  position: relative;
+  width: 90%;
+  background-color:gray;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.296875) 0px 6px 5px;
+  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+  top: 18px;
+  z-index: 3;
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-width: 0px 0.5px 0px 0.5px;
+  border-style: outset;
+  border-color: dimgray;
+  height: 36px;
+  cursor: pointer;
+}
+
+nav li:first-child {
+  border-left: none;
+  font-size: x-large;
+}
+
+nav li:last-child {
+  border-right: none;
+  cursor: default;
+}
+
+nav li:last-child:hover {
+  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+}
+
+nav li:hover {
+  background: -webkit-linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
+  border-radius: 3px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
+}
+
+#input {
+  background: transparent;
+  border: 1.5px solid gray;
+  border-radius: 30px;
+  border-style: inset;
+  width: 135px;
+  padding-left: 26px;
+  outline: none;
+  margin-right: 10px;
+  color: white;
+}
+
+.input-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  left: 8px;
+  color: white;
+}
+
+#header {
+  background-image: url("/assets/pics/your_verse_hero.jpg");
+}

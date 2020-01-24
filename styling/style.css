@@ -83,15 +83,15 @@ html {
 
 
 nav {
+  display: block;
   position: relative;
-  width: 90%;
-  background-color:gray;
+  width: 94%;
   margin: 0 auto;
   text-align: center;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.296875) 0px 6px 5px;
+  box-shadow: rgba(0, 0, 0, 0.296875) 0 6px 5px;
   background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
-  top: 18px;
+  top: 81px;
   z-index: 3;
 }
 
@@ -103,7 +103,7 @@ nav li {
   list-style: none;
   font-size: 1.4rem;
   font-weight: 600;
-  border-width: 0px 0.5px 0px 0.5px;
+  border-width: 0 0.1rem;
   border-style: outset;
   border-color: dimgray;
   height: 36px;
@@ -126,7 +126,7 @@ nav li:last-child:hover {
 
 nav li:hover {
   background: -webkit-linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 nav a {
@@ -140,12 +140,12 @@ nav ul {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 #input {
   background: transparent;
-  border: 1.5px solid gray;
+  border: 1px solid gray;
   border-radius: 30px;
   border-style: inset;
   width: 135px;
@@ -168,6 +168,81 @@ nav ul {
   color: white;
 }
 
-#header {
-  background-image: url("/assets/pics/your_verse_hero.jpg");
+header {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 86px;
+  right: auto;
+  left: auto;
+  width: 100%;
+  min-width: 100%;
+  background: url('../../../git/Building-with-Backgrounds-and-Gradients/assets/pics/your_verse_hero.jpg') no-repeat 50% 100%;
+  background-color: transparent;
+}
+
+.header-title {
+  display: block;
+  position: relative;
+  top: 159px;
+  bottom: 0;
+  width: 82%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.inline-header {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 31px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+h2 {
+  text-align: left;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 18px;
+  font-size: 16px;
+  margin: 0px 0px 27px;
+  padding: 0px;
+}
+
+h3 {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+  display: inline-block;
+  height: 86px;
+  margin: -31px 18px 25px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div h3 img {
+  min-height: 63px;
+  max-height: 70px;
+}
+
+aside > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  top: 85%;
+  list-style: none;
+  margin-left: -39px;
+}
+
+footer > img .usa-img {
+  width: 10px !important;
 }

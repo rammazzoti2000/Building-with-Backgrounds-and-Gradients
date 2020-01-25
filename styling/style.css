@@ -170,7 +170,7 @@ header {
   left: auto;
   width: 100%;
   min-width: 100%;
-  background: url('../../../git/Building-with-Backgrounds-and-Gradients/assets/pics/your_verse_hero.jpg') no-repeat 50% 100%;
+  background: url('assets/your_verse_hero.jpg') no-repeat 50% 100%;
   background-color: transparent;
 }
 

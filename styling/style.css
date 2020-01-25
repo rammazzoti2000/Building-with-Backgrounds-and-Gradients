@@ -237,6 +237,10 @@ footer a {
   padding: 0 4px;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 .h3 a:hover {
   text-decoration: underline;
 }
@@ -286,10 +290,6 @@ footer {
   color: #6e6e6e;
   text-decoration: none;
   height: 68px;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 .one-line-footer {

@@ -1,8 +1,9 @@
 # Building-with-Backgrounds-and-Gradients
 > Clone of an old version of the Apple website webpage
 
+![screenshot](/assets/pics/web_screenshot.png)
 
-Remake of an old Apple home page from [Apple.com](https://archive.md/UW4oR).
+Remake of an old Apple home page - [Apple.com](https://archive.md/UW4oR).
 
 ## Built With
 
@@ -11,17 +12,12 @@ Remake of an old Apple home page from [Apple.com](https://archive.md/UW4oR).
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/rammazzoti2000/Positioning-and-Floating-Elements/88df2362691dd965d913bfdbce0e08b40ca59f5a/index.html)
+[Live Demo Link](https://rawcdn.githack.com/rammazzoti2000/Building-with-Backgrounds-and-Gradients/326c54ba81e2ec2349e42c589ade2d6d14225261/index.html)
 
 
 ## Authors
 
 👤 **Author1**
-
-- Github: [@vzdrizhni](https://github.com/vzdrizhni)
-- Linkedin: [Roman Nikolaev](https://www.linkedin.com/in/roman-nikolaev-65b639197/)
-
-👤 **Author2**
 
 - Github: [@rammazzoti2000](https://github.com/rammazzoti2000)
 - Linkedin: [Alexandru Bangau](https://www.linkedin.com/in/alexandru-bangau/)

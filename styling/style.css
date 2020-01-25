@@ -60,15 +60,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 
 html,
 body {
@@ -92,7 +83,7 @@ nav {
   text-align: center;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.296875) 0 6px 5px;
-  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
   top: 83px;
   z-index: 3;
 }
@@ -123,11 +114,11 @@ nav li:last-child {
 }
 
 nav li:last-child:hover {
-  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
 }
 
 nav li:hover {
-  background: -webkit-linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
+  background: linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
   border-radius: 4px;
 }
 
@@ -193,6 +184,11 @@ header {
   text-align: left;
 }
 
+div.header-title h1 a img {
+  object-fit: cover;
+  object-position: 10px 6px;
+}
+
 .inline-header {
   display: block;
   text-align: center;
@@ -216,7 +212,7 @@ h2 {
   padding: 0px;
 }
 
-h3 {
+.h3 {
   /*color: rgb(0, 136, 204);
   text-decoration: none;
   display: inline-block;
@@ -231,17 +227,17 @@ h3 {
   margin-left: auto;
 }
 
-h3 a {
+.h3 a {
   display: inline-block;
   margin-bottom: 25px;
   height: 29px;
 }
 
-h3 a:hover {
+.h3 a:hover {
   text-decoration: underline;
 }
 
-h3 a img {
+.h3 a img {
   display: inline-block;
 }
 
@@ -250,7 +246,7 @@ img {
   display: block;
 }
 
-div h3 img {
+div .h3 img {
   min-height: 63px;
   max-height: 70px;
 }

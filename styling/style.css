@@ -232,13 +232,19 @@ div h3 img {
   max-height: 70px;
 }
 
+aside {
+  
+  position: absolute;
+  
+  bottom: 0;
+  top: 85%;
+  
+}
+
 aside > ul {
   display: flex;
   flex-flow: row nowrap;
-  position: absolute;
   justify-content: center;
-  bottom: 0;
-  top: 85%;
   list-style: none;
   margin-left: -39px;
 }

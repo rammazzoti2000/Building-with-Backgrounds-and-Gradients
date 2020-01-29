@@ -60,16 +60,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 html,
 body {
   overflow: auto;
@@ -77,21 +67,22 @@ body {
 }
 
 html {
+  box-sizing: border-box;
   font-size: 65%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 110%;
 }
-
 
 nav {
   display: block;
   position: relative;
-  width: 94%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.296875) 0 6px 5px;
-  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
-  top: 81px;
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+  top: 83px;
   z-index: 3;
 }
 
@@ -120,19 +111,25 @@ nav li:last-child {
   cursor: default;
 }
 
-nav li:last-child:hover {
-  background: -webkit-linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+nav li:hover {
+  background: linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
+  border-radius: 4px;
 }
 
-nav li:hover {
-  background: -webkit-linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
-  border-radius: 4px;
+nav li:last-child:hover {
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
 }
 
 nav a {
   text-decoration: none;
   color: white;
+}
 
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style: none;
 }
 
 nav ul {
@@ -172,12 +169,12 @@ header {
   display: block;
   position: absolute;
   top: 0;
-  bottom: 86px;
+  bottom: 23%;
   right: auto;
   left: auto;
   width: 100%;
   min-width: 100%;
-  background: url('../../../git/Building-with-Backgrounds-and-Gradients/assets/pics/your_verse_hero.jpg') no-repeat 50% 100%;
+  background: url('https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') no-repeat 50% 100%;
   background-color: transparent;
 }
 
@@ -186,7 +183,7 @@ header {
   position: relative;
   top: 159px;
   bottom: 0;
-  width: 82%;
+  width: 72%;
   margin: 0 auto;
   text-align: left;
 }
@@ -199,8 +196,8 @@ header {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 31px;
-  margin: 0px auto;
-  padding: 0px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 h2 {
@@ -210,45 +207,110 @@ h2 {
   font-weight: bold;
   line-height: 18px;
   font-size: 16px;
-  margin: 0px 0px 27px;
-  padding: 0px;
+  margin: 0 0 27px;
+  padding: 0;
 }
 
-h3 {
-  color: rgb(0, 136, 204);
-  text-decoration: none;
-  display: inline-block;
-  height: 86px;
-  margin: -31px 18px 25px;
-}
-
-img {
-  max-width: 100%;
+.h3 {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: 31px;
   display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-div h3 img {
+footer a {
+  text-decoration: none;
+  color: #08c;
+}
+
+.h3 a {
+  display: inline-block;
+  margin-bottom: 25px;
+  height: 29px;
+}
+
+.footer-right li a {
+  border-left: 1px solid gray;
+  padding: 0 4px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.h3 a:hover {
+  text-decoration: underline;
+}
+
+.h3 a img {
+  display: inline-block;
+}
+
+div .h3 img {
   min-height: 63px;
   max-height: 70px;
 }
 
-aside {
-  
+.footer-right li a img {
   position: absolute;
-  
-  bottom: 0;
-  top: 85%;
-  
+  top: 0;
+  right: -18px;
 }
 
-aside > ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  list-style: none;
+div.header-title h1 a img {
+  object-fit: cover;
+  object-position: 10px 6px;
+}
+
+aside {
+  position: absolute;
+  bottom: 0;
+  top: 75.5%;
   margin-left: -39px;
 }
 
-footer > img .usa-img {
-  width: 10px !important;
+.phone-pics {
+  height: 197px;
+}
+
+footer {
+  position: absolute;
+  top: 113%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 82%;
+  line-height: 2;
+  text-align: center;
+  color: #6e6e6e;
+  text-decoration: none;
+  height: 68px;
+}
+
+.one-line-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.footer-right {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom a:last-child {
+  border-left: 1px solid gray;
+}
+
+footer div ul.footer-right li.remove-border a {
+  border-left: none;
+}
+
+.footer-bottom {
+  float: left;
 }
